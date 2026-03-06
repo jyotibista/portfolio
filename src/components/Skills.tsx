@@ -2,57 +2,11 @@
 
 import { useState } from "react";
 import type { Tokens } from "../types";
+import { SKILL_GROUPS } from "../data/portfolioData";
 
 interface SkillsProps {
   t: Tokens;
 }
-
-interface SkillGroup {
-  label: string;
-  emoji: string;
-  description: string;
-  skills: string[];
-  colSpan: string;
-}
-
-const SKILL_GROUPS: SkillGroup[] = [
-  {
-    label: "Frontend",
-    emoji: "🖥️",
-    description: "What I spend most of my day in",
-    colSpan: "md:col-span-2",
-    skills: ["React.js", "Next.js", "TypeScript", "JavaScript ES6+", "Redux", "Context API", "HTML5", "CSS3"],
-  },
-  {
-    label: "Styling & UI",
-    emoji: "🎨",
-    description: "Making things look good",
-    colSpan: "md:col-span-1",
-    skills: ["Tailwind CSS", "Material UI", "Bootstrap"],
-  },
-  {
-    label: "Performance & Testing",
-    emoji: "⚡",
-    description: "Obsessively optimising every render",
-    colSpan: "md:col-span-1",
-    skills: ["Lazy Loading", "Memoization", "Code Splitting", "Caching", "Jest", "React Testing Library"],
-  },
-
-  {
-    label: "Tools & DevOps",
-    emoji: "🔧",
-    description: "The everyday toolkit",
-    colSpan: "md:col-span-1",
-    skills: ["Git", "GitHub", "Jira", "Postman", "Webpack", "Vite"],
-  },
-  {
-    label: "Backend (Basic)",
-    emoji: "🌱",
-    description: "Enough to talk to the backend team",
-    colSpan: "md:col-span-1",
-    skills: ["Node.js", "Express.js", "MongoDB", "SQL", "REST APIs"],
-  },
-];
 
 export default function Skills({ t }: SkillsProps) {
   const [hovered, setHovered] = useState<string | null>(null);

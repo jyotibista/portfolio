@@ -13,11 +13,11 @@ export default function VibeWidget({ currentVibe, t }: VibeWidgetProps) {
       <div className="flex items-center gap-2">
         <span className="text-xl">☕</span>
         <div>
-          <p className="text-xs opacity-60">coding with</p>
+          <p className="text-xs opacity-60">Coding with</p>
           <p className="serif text-xs font-bold">{currentVibe}</p>
         </div>
       </div>
-      <p className="text-xs mt-1 opacity-50">🎵 lo-fi beats</p>
+      <p className="text-xs mt-2 text-center opacity-50">🎵 lo-fi beats</p>
     </div>
   );
 }

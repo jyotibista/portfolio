@@ -39,9 +39,9 @@ export default function Projects({ t }: ProjectsProps) {
         {projects.map((p, i) => (
           <div
             key={`${activeTab}-${i}`}
-            className={`relative group ${p.size === "large" ? "md:col-span-2" : ""}`}
+            className={`relative group`}
           >
-            <div className={`p-8 rounded-3xl border-2 shadow-xl overflow-hidden lift ${t.card}`}>
+            <div className={`p-8 h-full rounded-3xl border-2 shadow-xl overflow-hidden lift ${t.card}`}>
               <div className="flex items-start justify-between mb-3">
                 <div>
                   <h3 className={`serif text-2xl font-bold mb-1 ${t.heading}`}>{p.title}</h3>
