@@ -23,7 +23,7 @@ export default function Hero({ t }: HeroProps) {
   ];
 
   return (
-    <section className="text-center">
+    <section id="hero" className="text-center">
       <div
         className={`w-36 h-36 rounded-full mx-auto mb-8 flex items-center justify-center text-6xl shadow-2xl border-4 hover:scale-105 transition-transform
           ${d
@@ -56,7 +56,7 @@ export default function Hero({ t }: HeroProps) {
             ${d ? "bg-[#2a1f22]/70 text-rose-300 border-[#4a2833]/60" : "bg-pink-100/80 text-rose-700 border-pink-300/50"}`}
         >
           <span className="text-xl">📊</span>
-          Data Science Enthusiast — currently learning Python, Stats &amp; ML
+          Data Science Enthusiast — currently learning Python, Stats, AI &amp; ML
         </div>
       </div>
 

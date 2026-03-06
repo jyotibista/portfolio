@@ -4,7 +4,7 @@ import type { Personal, Skill, Project, Experience, Education, Value, Blog } fro
 
 export const personaldescription: Personal = {
   name: "Jyoti Bista",
-  tagline: "Frontend dev who ships pixel-perfect UIs & buttery-smooth UX ✨",
+  tagline: "Frontend Engineer shipping slick UIs & buttery-smooth UX.✨",
   location: "Kathmandu, Nepal",
   email: "zyotieebista12@gmail.com",
   phone: "+977 9861516870",
@@ -159,7 +159,7 @@ export const education: Education[] = [
     school: "Coventry University",
     period: "2025 – Present",
     icon: "📊",
-    detail: "Studying Python, statistics, ML fundamentals & data visualisation. Bridging the gap between beautiful UIs and meaningful data — because both matter.",
+    detail: "Studying Python, statistics, AI/ML fundamentals & data visualisation. Bridging the gap between beautiful UIs and meaningful data with AI/ML— because both matter.",
   },
 ];
 

@@ -21,9 +21,9 @@ export default function Nav({ isDark, onToggleDark, t }: NavProps) {
   return (
     <nav className={`fixed top-0 w-full z-50 backdrop-blur-lg border-b ${t.navBg}`}>
       <div className="max-w-6xl mx-auto px-6 py-4 flex justify-between items-center">
-        <span className="serif text-2xl font-bold bg-gradient-to-r from-pink-500 to-rose-500 bg-clip-text text-transparent">
+        <a href="#hero" className="serif text-2xl font-bold bg-gradient-to-r from-pink-500 to-rose-500 bg-clip-text text-transparent">
           JB ✨
-        </span>
+        </a>
         <div className="hidden md:flex items-center gap-7 text-sm font-medium">
           {NAV_LINKS.map(({ label, href }) => (
             <a key={label} href={href} className={`${t.muted} hover:text-rose-500 transition-colors`}>
