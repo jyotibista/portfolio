@@ -1,6 +1,5 @@
 // components/Nav.tsx
 
-import React from "react";
 import { Moon, Sun } from "lucide-react";
 import type { Tokens } from "../types";
 
@@ -11,11 +10,11 @@ interface NavProps {
 }
 
 const NAV_LINKS: { label: string; href: string }[] = [
-  { label: "My Stack",     href: "#skills" },
+  { label: "My Stack", href: "#skills" },
   { label: "What I Built", href: "#projects" },
   { label: "Work History", href: "#experience" },
-  { label: "Learning",     href: "#education" },
-  { label: "Blog",         href: "#blogs" },
+  { label: "Learning", href: "#education" },
+  { label: "Blog", href: "#blogs" },
 ];
 
 export default function Nav({ isDark, onToggleDark, t }: NavProps) {

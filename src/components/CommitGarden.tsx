@@ -1,6 +1,6 @@
 // components/CommitGarden.tsx
 
-import React, { useMemo } from "react";
+import { useMemo } from "react";
 import { Github } from "lucide-react";
 import { personaldescription } from "../data/portfolioData";
 import type { Tokens } from "../types";
@@ -14,7 +14,7 @@ export default function CommitGarden({ t }: CommitGardenProps) {
 
   const fill = (v: number): string => {
     if (v > 0.75) return t.commitHigh;
-    if (v > 0.5)  return t.commitMid;
+    if (v > 0.5) return t.commitMid;
     if (v > 0.25) return t.commitLow;
     return t.commitEmpty;
   };

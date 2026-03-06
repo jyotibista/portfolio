@@ -1,6 +1,5 @@
 // components/Education.tsx
 
-import React from "react";
 import { education } from "../data/portfolioData";
 import type { Tokens } from "../types";
 

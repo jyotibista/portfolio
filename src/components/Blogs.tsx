@@ -1,6 +1,5 @@
 // components/Blogs.tsx
 
-import React from "react";
 import { BookOpen } from "lucide-react";
 import { blogs } from "../data/portfolioData";
 import type { Tokens } from "../types";

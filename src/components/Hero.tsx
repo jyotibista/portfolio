@@ -1,6 +1,5 @@
 // components/Hero.tsx
 
-import React from "react";
 import { Github, Linkedin, Mail, Zap, type LucideIcon } from "lucide-react";
 import { personaldescription } from "../data/portfolioData";
 import type { Tokens } from "../types";
@@ -18,9 +17,9 @@ export default function Hero({ t }: HeroProps) {
   const d = t.isDark;
 
   const socials: SocialLink[] = [
-    { Icon: Github,   href: personaldescription.github },
+    { Icon: Github, href: personaldescription.github },
     { Icon: Linkedin, href: personaldescription.linkedin },
-    { Icon: Mail,     href: `mailto:${personaldescription.email}` },
+    { Icon: Mail, href: `mailto:${personaldescription.email}` },
   ];
 
   return (

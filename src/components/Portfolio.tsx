@@ -1,33 +1,32 @@
 // Portfolio.tsx — root orchestrator
 
-import React from "react";
-
 import { useDarkMode, useLoader, useVibe } from "../hooks/hooks";
 import { getTokens } from "../styles/theme";
 
 import LoadingScreen from "../components/LoadingScreen";
-import Nav           from "../components/Nav";
-import VibeWidget    from "../components/VibeWidget";
-import Hero          from "../components/Hero";
-import Skills        from "../components/Skills";
-import Projects      from "../components/Projects";
-import Experience    from "../components/Experience";
-import Education     from "../components/Education";
-import Values        from "../components/Values";
-import CommitGarden  from "../components/CommitGarden";
-import Blogs         from "../components/Blogs";
+import Nav from "../components/Nav";
+import VibeWidget from "../components/VibeWidget";
+import Hero from "../components/Hero";
+import Skills from "../components/Skills";
+import Projects from "../components/Projects";
+import Experience from "../components/Experience";
+import Education from "../components/Education";
+import Values from "../components/Values";
+import CommitGarden from "../components/CommitGarden";
+import Blogs from "../components/Blogs";
 
 export default function Portfolio() {
   const [isDark, toggleDark] = useDarkMode(false);
-  const isLoading             = useLoader(2000);
-  const currentVibe           = useVibe();
-  const t                     = getTokens(isDark);
+  const isLoading = useLoader(2000);
+  const currentVibe = useVibe();
+  const t = getTokens(isDark);
 
   if (isLoading) return <LoadingScreen bg={t.bg} muted={t.muted} />;
 
   return (
     <div className={`min-h-screen transition-colors duration-500 ${t.bg}`}>
-      <style dangerouslySetInnerHTML={{ __html: `
+      <style dangerouslySetInnerHTML={{
+        __html: `
         @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700;900&family=Inter:wght@300;400;500;600&display=swap');
         * { font-family: 'Inter', sans-serif; box-sizing: border-box; }
         .serif { font-family: 'Playfair Display', serif !important; }
@@ -59,14 +58,14 @@ export default function Portfolio() {
       <VibeWidget currentVibe={currentVibe} t={t} />
 
       <div className="max-w-6xl mx-auto px-6 pt-28 pb-24 space-y-32">
-        <Hero         t={t} />
-        <Skills       t={t} />
-        <Projects     t={t} />
-        <Experience   t={t} />
-        <Education    t={t} />
-        <Values       t={t} />
+        <Hero t={t} />
+        <Skills t={t} />
+        <Projects t={t} />
+        <Experience t={t} />
+        <Education t={t} />
+        <Values t={t} />
         <CommitGarden t={t} />
-        <Blogs        t={t} />
+        <Blogs t={t} />
         <section className="text-center">
           <p className={`serif text-sm ${t.muted}`}>Made with 💖 and ☕ by Jyoti</p>
         </section>

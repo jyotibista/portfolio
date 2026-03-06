@@ -1,6 +1,6 @@
 // components/Skills.tsx — grouped clusters, all using pill tags
 
-import React, { useState } from "react";
+import { useState } from "react";
 import type { Tokens } from "../types";
 
 interface SkillsProps {
@@ -35,7 +35,7 @@ const SKILL_GROUPS: SkillGroup[] = [
     emoji: "⚡",
     description: "Obsessively optimising every render",
     colSpan: "md:col-span-1",
-    skills: ["Lazy Loading", "Memoization", "Code Splitting", "Caching","Jest", "React Testing Library"],
+    skills: ["Lazy Loading", "Memoization", "Code Splitting", "Caching", "Jest", "React Testing Library"],
   },
 
   {

@@ -1,6 +1,5 @@
 // components/VibeWidget.tsx
 
-import React from "react";
 import type { Tokens } from "../types";
 
 interface VibeWidgetProps {

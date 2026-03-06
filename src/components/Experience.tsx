@@ -1,6 +1,5 @@
 // components/Experience.tsx
 
-import React from "react";
 import { experiences } from "../data/portfolioData";
 import type { Tokens } from "../types";
 

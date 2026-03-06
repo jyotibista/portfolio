@@ -1,6 +1,5 @@
 // components/LoadingScreen.tsx
 
-import React from "react";
 
 interface LoadingScreenProps {
   bg: string;

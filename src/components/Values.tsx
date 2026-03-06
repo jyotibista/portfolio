@@ -1,6 +1,5 @@
 // components/Values.tsx
 
-import React from "react";
 import { values } from "../data/portfolioData";
 import type { Tokens } from "../types";
 

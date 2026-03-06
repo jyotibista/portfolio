@@ -1,6 +1,6 @@
 // components/Projects.tsx
 
-import React, { useState } from "react";
+import { useState } from "react";
 import { ExternalLink } from "lucide-react";
 import { professionalProjects, personalProjects } from "../data/portfolioData";
 import type { Tokens } from "../types";
@@ -27,9 +27,8 @@ export default function Projects({ t }: ProjectsProps) {
           <button
             key={tab}
             onClick={() => setActiveTab(tab)}
-            className={`px-6 py-2.5 rounded-xl text-sm font-semibold capitalize transition-all ${
-              activeTab === tab ? t.tabActive : t.tabIdle
-            }`}
+            className={`px-6 py-2.5 rounded-xl text-sm font-semibold capitalize transition-all ${activeTab === tab ? t.tabActive : t.tabIdle
+              }`}
           >
             {tab === "professional" ? "💼 Professional" : "🌱 Personal"}
           </button>
