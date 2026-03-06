@@ -13,7 +13,7 @@ export const personaldescription: Personal = {
   yearsExp: "4+",
 };
 
-export const vibes: string[] = ["Matcha Latte", "Iced Coffee", "Chai Tea", "Hot Cocoa"];
+export const vibes: string[] = ["Matcha Latte", "Iced Coffee", "Masala Tea", "Hot Cocoa"];
 
 
 
